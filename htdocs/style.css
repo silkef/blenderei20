@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@font-face{
+  font-family:LeagueScript;
+  src:url('LeagueScriptNumberOne.woff');
+}
+
+body { 
+font-size:1.2em;
+font-family: sans-serif;
+  background-color: #85705f;
+}
+
+
+/*@media screen and (min-width:30rem) {
+  body {
+    font-size: 1em;
+  }
+}
+*/
+h1, .cursive  {
+  font-family: LeagueScript, cursive;
+  text-transform:none;
+}
+h1 {
+  padding-bottom:0;
+  margin-bottom:0.5rem;
+  margin-top:1rem;
+
+}
+body.overview h1, body.overview > main > p {
+  color:#dd3;
+}
+.cursive {
+  font-size:92%;
+}
+
+main {
+/*  background-color: #f5f;*/
+  display:flex;
+  min-height:90vh;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  min-width: 300px;
+  max-width: 27rem;
+  margin-left:auto;
+  margin-right:auto;
+}
+ul.overview {
+  width:100%;
+  list-style:none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 9rem);
+  grid-gap: 0;
+  justify-content:center;
+  margin: 0;
+  padding:0;
+}
+
+ul.overview > li {
+  min-width: 9rem;
+  height: 9rem;
+  text-indent:0;
+  text-align:center;
+  margin:0;
+/*  display: flex;
+  align-content:center;
+  align-items:center;
+  justify-content:space-evenly;
+  flex-flow:column;*/
+  width:auto;
+  padding:0;
+}
+li.span2 {
+  grid-column: auto / span 2;
+}
+ul.overview > li > p {
+  margin:0;
+  padding:0;
+}
+ul.overview > li > p img{
+  max-width: 7em;
+}
+
+a {
+  text-decoration:none
+}
