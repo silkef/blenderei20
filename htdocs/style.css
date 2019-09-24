@@ -8,9 +8,17 @@
 body { 
 font-size:1.2em;
 font-family: sans-serif;
+}
+body.overview {
   background-color: #85705f;
 }
+body.category, body.detail {
+  background-color: inherit;
+}
 
+h1, h2 {
+  font-weight:normal;
+}
 
 /*@media screen and (min-width:30rem) {
   body {
@@ -31,6 +39,15 @@ h1 {
 body.overview h1, body.overview > main > p {
   color:#dd3;
 }
+h1, h2 {
+  text-align:center;
+}
+main > p {
+  text-align:left;
+}
+body.category > main > p, body.detail > main > p {
+  color:inherit;
+}
 .cursive {
   font-size:92%;
 }
@@ -40,7 +57,7 @@ main {
   display:flex;
   min-height:90vh;
   flex-direction: column;
-  align-items:center;
+/*  align-items:center;*/
   justify-content:center;
   min-width: 300px;
   max-width: 27rem;
@@ -75,6 +92,10 @@ ul.overview > li {
 li.span2 {
   grid-column: auto / span 2;
 }
+ul.overview > li.text {
+  text-align:left;
+  hyphens:auto;
+}
 ul.overview > li > p {
   margin:0;
   padding:0;
@@ -87,5 +108,6 @@ a {
   text-decoration:none
 }
 .fineprint {
-  font-size:85%;
+  text-align: center;
+  font-size:80%;
 }
