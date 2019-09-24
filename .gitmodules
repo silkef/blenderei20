@@ -1,0 +1,3 @@
+[submodule "htdocs/Tobi"]
+	path = htdocs/Tobi
+	url = https://github.com/gimsieke/Tobi
