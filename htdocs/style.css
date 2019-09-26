@@ -16,6 +16,10 @@ body.category, body.detail {
   background-color: inherit;
 }
 
+body#modeling_dog {
+  background-color: #45ffff;
+}
+
 h1, h2 {
   font-weight:normal;
 }
@@ -46,6 +50,14 @@ body.detail h1, body.category h1 {
   font-size: 1em;
   text-align: right;
 }
+
+#modeling_dog h1 a {
+  color:green;
+}
+#modeling_dog h1 a:hover {
+  color:red;
+}
+
 h1 {
   text-align:center;
 }
