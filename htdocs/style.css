@@ -30,17 +30,28 @@ h1, .cursive  {
   font-family: LeagueScript, cursive;
   text-transform:none;
 }
-h1 {
+.start h1 {
   padding-bottom:0;
   margin-bottom:0.5rem;
   margin-top:1rem;
 
 }
-body.overview h1, body.overview > main > p {
+body.start h1, body.start h1 a, body.overview > main > p {
   color:#EFEFEF;
 }
-h1, h2 {
+body.detail h1, body.category h1 {
+/*  position: absolute;
+  top: 1em;*/
+  margin:0;
+  font-size: 1em;
+  text-align: right;
+}
+h1 {
   text-align:center;
+}
+h2 {
+  text-align:left;
+  margin-top:0.3em;
 }
 main > p {
   text-align:left;
@@ -108,6 +119,6 @@ a {
   text-decoration:none
 }
 .fineprint {
-  text-align: center;
+  text-align: right;
   font-size:60%;
 }
