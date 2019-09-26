@@ -10,7 +10,7 @@ font-size:1.2em;
 font-family: sans-serif;
 }
 body.overview {
-  background-color: #85705f;
+  background-color: #404040;
 }
 body.category, body.detail {
   background-color: inherit;
@@ -37,7 +37,7 @@ h1 {
 
 }
 body.overview h1, body.overview > main > p {
-  color:#dd3;
+  color:#EFEFEF;
 }
 h1, h2 {
   text-align:center;
@@ -109,5 +109,5 @@ a {
 }
 .fineprint {
   text-align: center;
-  font-size:80%;
+  font-size:60%;
 }
