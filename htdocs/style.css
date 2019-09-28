@@ -17,7 +17,7 @@ body.category, body.detail {
 }
 
 body#modeling_dog {
-  background-color: #45ffff;
+  background-color: #ffffff;
 }
 
 h1, h2 {
@@ -53,9 +53,11 @@ body.detail h1, body.category h1 {
 
 #modeling_dog h1 a {
   color:green;
+ 
 }
 #modeling_dog h1 a:hover {
   color:red;
+  
 }
 
 h1 {
@@ -64,6 +66,7 @@ h1 {
 h2 {
   text-align:left;
   margin-top:0.3em;
+  /*font-size:80%;*/
 }
 main > p {
   text-align:left;
