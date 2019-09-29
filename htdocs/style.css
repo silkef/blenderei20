@@ -63,15 +63,6 @@ body.detail h1, body.category h1 {
   text-align: right;
 }
 
-#modeling_dog h1 a {
-  color:green;
- 
-}
-#modeling_dog h1 a:hover {
-  color:red;
-  
-}
-
 h1 {
   text-align:center;
 }
@@ -203,10 +194,10 @@ details ul {
   max-width:100%;
 }
 
-details ul a {
+a {
   color:#404040;
 }
-details ul a:hover, details li {
+a:hover, details li {
   color:#999;
 }
 
