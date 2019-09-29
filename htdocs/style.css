@@ -186,14 +186,12 @@ summary, details {
 }
 
 details { 
- /* visibility: hidden;*/
   text-align:right;
   font-size: 0.85em;
   overflow-y:visible;
   height:2em;
   margin-left:-2%;
   width:103%;
-/*  max-width: 90%;*/
 }
 details ul {
   background-color:white;
@@ -203,7 +201,6 @@ details ul {
   margin-left:0;
   padding-left:0;
   max-width:100%;
-/*  width:100%;*/
 }
 
 details ul a {
@@ -213,14 +210,13 @@ details ul a:hover, details li {
   color:#999;
 }
 
-
-
-
 details > ul {
-  margin-right:0.5em;
-  padding-right:0.2em;
-  padding-bottom:0.5em;
-  padding-top:0.5em;
+  margin-right:0.5rem;
+  padding-right:0.2rem;
+  padding-bottom:0.5rem;
+  padding-top:0.5rem;
+  position:relative;
+  top:-0.2rem;
 
 }
 details summary::before { 
