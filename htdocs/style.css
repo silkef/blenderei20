@@ -188,11 +188,13 @@ details {
   font-size: 0.85em;
   overflow-y:overlay;
   height:2em;
+  margin-left:-2%;
+  width:103%;
 /*  max-width: 90%;*/
 }
 details ul {
   background-color:white;
-  opacity:0.9;
+  opacity:0.95;
   text-align:right;
   list-style:none;
   margin-left:0;
@@ -201,13 +203,26 @@ details ul {
 /*  width:100%;*/
 }
 
+details ul a {
+  color:#404040;
+}
+details ul a:hover, details li {
+  color:#999;
+}
+
+
+
+
 details > ul {
   margin-right:0.5em;
+  padding-right:0.2em;
+  padding-bottom:0.5em;
 
 }
 details summary::before { 
   content:"\2261"; 
   font-size: 2em;
+  color:#404040;
   position: relative;
   left: -10px;
   top: 2px;
