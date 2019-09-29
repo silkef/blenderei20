@@ -168,6 +168,15 @@ a {
 .tobi__slider__slide__content > figure > figcaption {
   bottom: inherit;
 }
+.tobi__slider__slide__content > figure {
+  max-height: 100vh;
+}
+@media screen and (max-height: 630px) {
+  .tobi__slider__slide__content > figure > figcaption {
+    bottom: 0;
+    opacity:0.8 !important;
+  }
+}
 
 summary, details { 
   display: block; 
