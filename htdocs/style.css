@@ -206,6 +206,9 @@ details ul {
 a {
   color:#404040;
 }
+.start a {
+  color:white;
+}
 a:hover, details li {
   color:#999;
 }

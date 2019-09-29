@@ -26,6 +26,11 @@
   
   <xsl:template match="body/@onload" mode="fix"/>
   
+  <xsl:template match="body[not(main/h1 = 'Blenderei')]/@class" mode="fix">
+    <xsl:next-match/>
+    <xsl:attribute name="onclick" select="'document.querySelector(''#nav'').removeAttribute(''open'')'"/>
+  </xsl:template>
+  
   <xsl:template match="body/script[@src = 'Tobi/js/tobi.js']" mode="fix">
     <xsl:copy>
       <xsl:text expand-text="false">const tobi = new Tobi({'zoom':false});</xsl:text>
