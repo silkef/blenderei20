@@ -217,6 +217,7 @@ details > ul {
   margin-right:0.5em;
   padding-right:0.2em;
   padding-bottom:0.5em;
+  padding-top:0.5em;
 
 }
 details summary::before { 
