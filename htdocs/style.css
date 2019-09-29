@@ -167,6 +167,7 @@ a {
 
 .tobi__slider__slide__content > figure > figcaption {
   bottom: inherit;
+  line-height:1.2;
 }
 .tobi__slider__slide__content > figure {
   max-height: 100vh;
@@ -175,6 +176,8 @@ a {
   .tobi__slider__slide__content > figure > figcaption {
     bottom: 0;
     opacity:0.8 !important;
+    line-height:1.1;
+    font-size:0.9rem;
   }
 }
 
