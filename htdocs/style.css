@@ -103,9 +103,6 @@ ul.overview {
   margin: 0;
   padding:0;
 }
-ul.overview.even {
-  grid-template-columns: repeat(auto-fill, 13rem);
-}
 
 ul.overview > li {
   min-width: 9rem;
@@ -122,10 +119,21 @@ ul.overview > li {
   padding:0;
 }
 
-ul.overview.even > li {
-  width: 13rem;
-  height: 13rem;
+@media screen and (min-width:28rem) {
+  ul.overview.even {
+    grid-template-columns: repeat(auto-fill, 13rem);
+  }
+  ul.overview.even > li {
+    width: 13rem;
+    height: 13rem;
+  }
+  ul.overview.even > li > p img{
+    max-width: 12.5rem;
+  }
+
+
 }
+
 
 ul.overview > li > p {
   text-align:left;
@@ -143,9 +151,6 @@ ul.overview > li > p {
 }
 ul.overview > li > p img{
   max-width: 8.5rem;
-}
-ul.overview.even > li > p img{
-  max-width: 12.5rem;
 }
 
 a {
