@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 @font-face{
-  font-family:LeagueScript;
-  src:url('LeagueScriptNumberOne.woff');
-}
-@font-face{
   font-family:Ubuntu;
   font-style:normal;
   font-weight:normal;
@@ -48,14 +44,12 @@ h1, h2 {
   }
 }
 */
-h1, .cursive  {
-  font-family: LeagueScript, cursive;
-  text-transform:none;
-}
+
 .start h1 {
   padding-bottom:0;
-  margin-bottom:0.5rem;
+  margin-bottom:1rem;
   margin-top:1rem;
+  text-align:left;
 
 }
 body.start h1, body.start h1 a, body.overview > main > p {
