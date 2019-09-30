@@ -31,6 +31,8 @@
     <xsl:attribute name="onclick" select="'document.querySelector(''#nav'').removeAttribute(''open'')'"/>
   </xsl:template>
   
+  <xsl:template match="body[not(main/h1 = 'Blenderei')]/@onclick" mode="fix"/>
+
   <xsl:template match="body/script[@src = 'Tobi/js/tobi.js']" mode="fix">
     <xsl:copy>
       <xsl:text expand-text="false">const tobi = new Tobi({'zoom':false});</xsl:text>
@@ -44,7 +46,7 @@
   
   <xsl:variable name="details" as="element(details)">
     <details id="nav" aria-label="navigation" xml:space="preserve">
-        <summary></summary>
+        <summary onclick="event.stopPropagation()"></summary>
         <ul>
           <li><b><a href="index.html">Blenderei</a></b>
             <ul>
@@ -84,6 +86,7 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+
 
   <xsl:variable name="fineprint" as="element(p)">
     <p class="fineprint">© 2019 <a href="about.html">Silke Fischer-Imsieke</a></p>
