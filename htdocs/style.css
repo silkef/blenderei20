@@ -173,6 +173,9 @@ a {
 .tobi__slider__slide__content > figure {
   max-height: 100vh;
 }
+.tobi__close {
+  outline:none;
+}
 @media screen and (max-height: 630px) {
   .tobi__slider__slide__content > figure > figcaption {
     bottom: 0;
