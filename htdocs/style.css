@@ -33,6 +33,9 @@ body.category, body.detail {
 body#modeling_dog {
   background-color: #ffffff;
 }
+body#about a {
+  text-decoration:underline;
+}
 
 h1, h2 {
   font-weight:normal;
