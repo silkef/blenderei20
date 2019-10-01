@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="style.css"/>
   </head>
-  <body class="overview start">
+  <body class="overview start" onclick="document.querySelector('#nav').removeAttribute('open')" id="index">
     <main>
-      <h1>Blenderei</h1>
+      <details id="nav" aria-label="navigation">
+        <summary onclick="event.stopPropagation()"></summary>
+        <ul>
+          <li><b>Blenderei</b>
+            <ul>
+              <li><a href="modeling_rigging.html">Modeling and Rigging</a></li>
+              <li><a href="animation.html">Animation</a></li>
+              <li><a href="VR_VFX.html">VR and VFX</a></li>
+              <li><a href="illustration.html">Illustration</a></li>
+              <li><a href="architecture_exhibition-design.html">Architecture and Exhibition Design</a></li>
+              <li><a href="environment.html">Environment</a></li>
+              <li><a href="about.html">About/Imprint</a></li>
+            </ul>
+          </li>
+        </ul>
+    </details><h1>Blenderei</h1>
       <ul class="overview">
         <li>
           <p><a href="modeling_rigging.html" title="Modeling and Rigging"><img src="img/web_home_thumbnails/modeling_rigging.png"/></a></p>

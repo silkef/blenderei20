@@ -205,14 +205,17 @@ details ul {
   padding-left:0;
   max-width:100%;
 }
+#index details ul {
+  background-color:#404040;
+}
 
 a {
   color:#404040;
 }
-.start a {
+#index a {
   color:white;
 }
-a:hover, details li {
+a:hover, #index a:hover, details li {
   color:#999;
 }
 
@@ -225,13 +228,16 @@ details > ul {
   top:-0.2rem;
 
 }
-details summary::before { 
+details summary::before {
   content:"\2261"; 
   font-size: 2em;
   color:#404040;
   position: relative;
   left: -10px;
   top: 2px;
+}
+#index details summary::before {
+  color:white;
 }
 details summary {
   outline:none;

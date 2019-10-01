@@ -26,12 +26,12 @@
   
   <xsl:template match="body/@onload" mode="fix"/>
   
-  <xsl:template match="body[not(main/h1 = 'Blenderei')]/@class" mode="fix">
+  <xsl:template match="body/@class" mode="fix">
     <xsl:next-match/>
     <xsl:attribute name="onclick" select="'document.querySelector(''#nav'').removeAttribute(''open'')'"/>
   </xsl:template>
   
-  <xsl:template match="body[not(main/h1 = 'Blenderei')]/@onclick" mode="fix"/>
+  <xsl:template match="body/@onclick" mode="fix"/>
 
   <xsl:template match="body/script[@src = 'Tobi/js/tobi.js']" mode="fix">
     <xsl:copy>
@@ -63,7 +63,7 @@
     </details>
   </xsl:variable>
   
-  <xsl:template match="main[not(h1 = 'Blenderei')]/*[1]" mode="fix" priority="1">
+  <xsl:template match="main/*[1]" mode="fix" priority="1">
     <xsl:apply-templates select="$details" mode="fix">
       <xsl:with-param name="page-name" as="xs:string" select="replace(base-uri(), '^.+/', '')" tunnel="yes"/>
     </xsl:apply-templates>
