@@ -33,7 +33,7 @@ body.category, body.detail {
 body#modeling_dog {
   background-color: #ffffff;
 }
-body#about a {
+body#about a:not([rel]) {
   text-decoration:underline;
 }
 
