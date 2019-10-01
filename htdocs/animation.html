@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Tobi/css/tobi.css"/>
     <link rel="stylesheet" href="style.css"/>
   </head>
-  <body class="category overview">
+  <body class="category overview" onclick="document.querySelector('#nav').removeAttribute('open')">
     <main>
       <details id="nav" aria-label="navigation">
         <summary onclick="event.stopPropagation()"></summary>
@@ -20,6 +20,7 @@
               <li><a href="illustration.html">Illustration</a></li>
               <li><a href="architecture_exhibition-design.html">Architecture and Exhibition Design</a></li>
               <li><a href="environment.html">Environment</a></li>
+              <li><a href="about.html">About/Imprint</a></li>
             </ul>
           </li>
         </ul>

@@ -56,6 +56,7 @@
               <li><a href="illustration.html">Illustration</a></li>
               <li><a href="architecture_exhibition-design.html">Architecture and Exhibition Design</a></li>
               <li><a href="environment.html">Environment</a></li>
+              <li><a href="about.html">About/Imprint</a></li>
             </ul>
           </li>
         </ul>
