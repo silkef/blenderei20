@@ -236,6 +236,9 @@ details summary::before {
 details summary {
   outline:none;
 }
+details summary:hover {
+  cursor:pointer;
+}
 details summary::-webkit-details-marker {
   display:none;
 }
