@@ -221,7 +221,9 @@ details > ul {
   padding-top:0.5rem;
   position:relative;
   top:-0.2rem;
-
+}
+#index details > ul {
+  top:-0.5rem;
 }
 details summary::before {
   content:"\2261"; 
