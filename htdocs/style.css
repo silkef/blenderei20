@@ -223,7 +223,7 @@ details > ul {
   top:-0.2rem;
 }
 #index details > ul {
-  top:-0.5rem;
+  top:-0.7rem;
 }
 details summary::before {
   content:"\2261"; 
