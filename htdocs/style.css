@@ -19,6 +19,19 @@
   src:url('fonts/Ubuntu-Bold.ttf');
 }
 
+:root {
+  --tile-size: 44vw;
+  --grid-gap: 5vw;
+}
+
+@media screen and (min-width: 52rem) {
+  :root {
+    --tile-size: 16rem;
+    --grid-gap: 1rem;
+  }
+}
+
+
 body { 
 font-size:1.2em;
 font-family: Ubuntu, sans-serif;
@@ -89,7 +102,7 @@ main {
 /*  align-items:center;*/
   justify-content:center;
   min-width: 300px;
-  max-width: 27rem;
+  max-width: 28rem;
   margin-left:auto;
   margin-right:auto;
 }
@@ -97,9 +110,9 @@ ul.overview {
   width:100%;
   list-style:none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 9rem);
-  grid-gap: 0;
-  justify-content:center;
+  grid-template-columns: repeat(auto-fill, var(--tile-size));
+  gap: var(--grid-gap);
+  justify-content: center;
   margin: 0;
   padding:0;
 }
@@ -109,8 +122,8 @@ ul.overview + ul.overview {
 }
 
 ul.overview > li {
-  min-width: 9rem;
-  height: 9rem;
+  min-width: var(--tile-size);
+  height: var(--tile-size);
   text-indent:0;
   text-align:center;
   margin:0;
@@ -123,8 +136,8 @@ ul.overview > li {
   padding:0;
 }
 
-@media screen and (min-width:28rem) {
-  ul.overview.even {
+/* @media screen and (min-width:28rem) {
+   ul.overview.even {
     grid-template-columns: repeat(auto-fill, 13rem);
   }
   ul.overview.even > li {
@@ -134,8 +147,15 @@ ul.overview > li {
   ul.overview.even > li > p img{
     max-width: 12.5rem;
   }
+} */
 
-
+@media screen and (min-width:50rem) {
+  main {
+    max-width: calc(3 * var(--tile-size) + 2 * var(--grid-gap));
+  }
+  ul.overview {
+    justify-content: space-between;
+  }
 }
 
 
@@ -154,7 +174,7 @@ ul.overview > li > p {
   padding:0;
 }
 ul.overview > li > p img{
-  max-width: 8.5rem;
+  max-width: var(--tile-size);
 }
 
 a {
